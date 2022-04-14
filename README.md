@@ -8,18 +8,13 @@
 
 为了保证损失函数的连续性，我没在此使用松弛的损失函数。其损失函数为：
 
-![](https://latex.codecogs.com/svg.latex?L_i(\mathbf{w},b)=\hat y_i(\mathbf{w}^T\mathbf{x_i}+b))
+![](https://latex.codecogs.com/svg.latex?L_i(\mathbf{w},b)=\hat%20y_i(\mathbf{w}^T\mathbf{x_i}+b))
 
 若这个点的损失函数大于0，显然该点已经被正确分类，我们什么都不做。如果该点的损失函数小于0，显然该点已经被错误分类，我们需要增加损失函数的值，使之可以被正确分类。
 
 损失函数的导数为：
 
-![](https://latex.codecogs.com/svg.latex?\left\{
-\begin{aligned}
-\frac{\partial{L_i}}{\partial{\mathbf{w}}} &=\hat y_i\mathbf{w}\\
-\frac{\partial{L_i}}{\partial{b}} &=  \hat{y}_i\\
-\end{aligned}
-\right.)
+![](https://latex.codecogs.com/svg.latex?\left\{\begin{aligned}\frac{\partial{L_i}}{\partial{\mathbf{w}}}&=\hat%20y_i\mathbf{w}\\\frac{\partial{L_i}}{\partial{b}}&= \hat{y}_i\\\end{aligned}\right.)
 
 该损失函数的值越大说明准确率越高，因此优化过程中沿着梯度方向增加。
 
