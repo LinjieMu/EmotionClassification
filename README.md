@@ -14,7 +14,7 @@
 
 损失函数的导数为：
 
-![](https://latex.codecogs.com/svg.latex?\left\{\begin{aligned}\frac{\partial{L_i}}{\partial{\mathbf{w}}}&=\hat%20y_i\mathbf{w}\\\frac{\partial{L_i}}{\partial{b}}&=\hat{y}_i\\\end{aligned}\right.)
+![temp](https://tva1.sinaimg.cn/large/e6c9d24ely1h19kwk7zcqj202q02a0sj.jpg)
 
 该损失函数的值越大说明准确率越高，因此优化过程中沿着梯度方向增加。
 
